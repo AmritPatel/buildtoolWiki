@@ -1,7 +1,4 @@
-**Contents**
-
-Introduction
-
-Installation
-
-Setting Details
+* [[Introduction]]
+* [[Installation]]
+* [[Parameter Details]]
+    * [Basic Settings](Parameter Details#Basic Settings)
