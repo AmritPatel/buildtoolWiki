@@ -1,4 +1,6 @@
 * [[Introduction]]
 * [[Installation]]
 * [[Parameter Details]]
-    * [Basic Settings](Parameter Details#Basic Settings)
+    * [[Basic Settings|Parameter-Details#Basic-Settings]]
+    * [[Release Types|Parameter-Details#Release-Types]]
+    * [[Build Platforms|Parameter-Details#Build-Platforms]]
