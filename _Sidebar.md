@@ -1,5 +1,6 @@
 * [[Introduction]]
 * [[Installation]]
+* [[Standard Usage]]
 * [[Parameter Details]]
     * [[Basic Settings|Parameter-Details#Basic-Settings]]
     * [[Basic Settings|Parameter-Details#Product-Parameters]]
