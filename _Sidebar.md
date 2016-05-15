@@ -1,4 +1,4 @@
-* [[Introduction]]
+* [[Introduction|Home]]
 * [[Installation]]
 * [[Standard Usage]]
 * [[Parameter Details]]
