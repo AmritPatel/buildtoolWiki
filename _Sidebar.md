@@ -3,6 +3,7 @@
 * [[Standard Usage]]
 * [[Parameter Details]]
     * [[Basic Settings|Parameter-Details#Basic-Settings]]
-    * [[Basic Settings|Parameter-Details#Product-Parameters]]
+    * [[Product Parameters|Parameter-Details#Product-Parameters]]
     * [[Release Types|Parameter-Details#Release-Types]]
     * [[Build Platforms|Parameter-Details#Build-Platforms]]
+    * [[Build Configurations|Parameter-Details#Build-Configurations]]
