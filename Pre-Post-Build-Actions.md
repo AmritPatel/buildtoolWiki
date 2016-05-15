@@ -1,0 +1,1 @@
+Pre/Post BuildActions allow you to expand the functionality of Super Unity Build by adding new methods that can run before/after all builds or individual builds of each separate configuration.
