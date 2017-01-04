@@ -25,6 +25,10 @@
 **Version** - The version number/string for the build. Recognized tokens for the version:
 * `$ADJECTIVE` - A randomly selected adjective.
 * `$NOUN` - A randomly selected noun.
+* `$YEAR` - The current year in "yyyy" format. 
+* `$MONTH` - The current month in "mm" format.
+* `$DAY` - The current day in "dd" format.
+* `$TIME` - Current time in "hhmmss" format.
 * `$DAYSSINCE` - The number of days since a specified date. For example, `$DAYSSINCE("January 1, 2015")`.
 * `$SECONDS` - The number of seconds since midnight, divided by 15 (an arbitrarily selected divisor just to keep the number a reasonable length).
 * `$BUILD` - The build count number.
