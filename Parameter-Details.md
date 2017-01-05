@@ -98,6 +98,7 @@ A Build Configuration is a full representation of a build constructed from Relea
 
 #### View Options
 **Hide disabled configurations** - Hides all disabled build configurations in the "Configurations" section below.
+
 **Show full configurations tree** - Enables tree view for the "Configurations" section below. Tree view is helpful for visualizing all build configuration options and easily enabling/disabling entire groups.
 
 #### Configurations
@@ -111,6 +112,9 @@ Clicking on a build configuration in this view will display its info in the "Bui
 This displays all relevant information about a build configuration selected from the "Configurations" section above.
 
 **Build** - Builds the selected build configuration.
+
 **Build and Run** - Builds the selected build configuration and then automatically launches it.
+
 **Build and Run w/ Profiler** - Builds the selected build and the automatically launches it and connects the profiler. This is only available if "Development Build" is enabled in this build configuration.
+
 **Refresh BuildConstants and Apply Defines** - Generates the BuildConstants class and applies all of the defines listed above. This is useful for simulating the characteristics of this build when running inside the Unity Editor.
