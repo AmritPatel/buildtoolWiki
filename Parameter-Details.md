@@ -1,7 +1,7 @@
 ## Basic Settings
 
 #### Build Path Options
-**Base Build Folder** - The base path where all builds will be output. Relative or absolute path. Relative paths are relative to the unity project's base folder.
+**Base Build Folder** - The base path where all builds are created. Can be a relative or absolute path. Relative paths are relative to the Unity project's base folder.
 
 **Build Path** - The path for each new build. If the path isn't unique, the previous build will be deleted. Recognized tokens for the build path:
 * `$YEAR` - The current year in "yyyy" format. 
@@ -20,6 +20,7 @@
 
 
 
+
 ## Product Parameters
 
 **Version** - The version number/string for the build. Recognized tokens for the version:
@@ -31,9 +32,12 @@
 * `$TIME` - Current time in "hhmmss" format.
 * `$DAYSSINCE` - The number of days since a specified date. For example, `$DAYSSINCE("January 1, 2015")`.
 * `$SECONDS` - The number of seconds since midnight, divided by 15 (an arbitrarily selected divisor just to keep the number a reasonable length).
-* `$BUILD` - The build count number.
+* `$BUILD` - The build counter number.
 
-**Build Count** - A counter that increments ever time a build is performed. Click the "Reset" button to reset the value to zero.
+**Auto-Generate Version** - If enabled, the version string will be generated every time a build is performed. Otherwise, the version string will only be updated when the "Generate Version String Now" button is clicked.
+
+**Build Counter** - A counter that increments ever time a build is performed. Can be manually set to a value or automatically reset by clicking the "Reset Build Counter" button.
+
 
 
 
@@ -43,12 +47,31 @@ Release types are intended to provide some top level separation between differen
 
 **Add Release Type** - Adds a new release type.
 
-#### Release Type
+#### Basic Info
 **Type Name** - The name of this release type.
 
 **Bundle Identifier** - The bundle identifier used for an iOS/Android build. This corresponds to [Application.bundleIdentifier](http://docs.unity3d.com/ScriptReference/Application-bundleIdentifier.html) and the "Bundle Identifer" setting in the iOS/Android [Player Settings](http://docs.unity3d.com/Manual/class-PlayerSettingsiOS.html).
 
 **Product Name** - The product name used for the build. This corresponds to [Application.productName](http://docs.unity3d.com/ScriptReference/Application-productName.html) and the "Product Name" setting in [Player Settings](http://docs.unity3d.com/Manual/class-PlayerSettings.html)
+
+#### Build Options
+**Custom Defines** - Custom pre-processor defines that will be used when compiling builds under this Release Type. Lists should be comma or semicolon delimited.
+
+**Development Build** - If enabled, all builds under this release type will be development builds. This corresponds to the "Development Build" option in [Build Settings](https://docs.unity3d.com/Manual/BuildSettings.html) and [BuildOptions.Development](https://docs.unity3d.com/ScriptReference/BuildOptions.Development.html).
+
+**Script Debugging** - If enabled, all builds under this release type will allow script debugging. The above "Development Build" setting must also be enabled for this to do anything. This corresponds to the "Script Debugging" option in [Build Settings](https://docs.unity3d.com/Manual/BuildSettings.html) and [BuildOptions.AllowDebugging](https://docs.unity3d.com/ScriptReference/BuildOptions.AllowDebugging.html).
+
+**Delete** - Deletes this release type.
+
+#### SceneList
+This is the list of scenes that will be included in the build. The order they appear is the order in which they're included, so the scene at the top will be the first scene loaded.
+
+The arrow keys will adjust the position of a scene in the list, with the double-up arrow moving a scene directly to the top of the list. The "X" button will remove a scene from the list.
+
+**Refresh Scene List** - Refreshes the list of scenes available to add by searching through all assets.
+
+
+
 
 ## Build Platforms
 
@@ -65,10 +88,29 @@ Build platforms are used to specify targeted hardware configurations. Distributi
 
 
 
+## Pre/Post-Build Actions
+
+
+
+
 ## Build Configurations
+A Build Configuration is a full representation of a build constructed from Release Type, Platform, Architecture, and Distribution.
 
 #### View Options
+**Hide disabled configurations** - Hides all disabled build configurations in the "Configurations" section below.
+**Show full configurations tree** - Enables tree view for the "Configurations" section below. Tree view is helpful for visualizing all build configuration options and easily enabling/disabling entire groups.
 
 #### Configurations
+A full display of all build configurations.
+
+In the default view, you can enable/disable individual build configurations so that they won't be included when clicking the "Perform All Enabled Builds" button. In the tree view (enabled above in "View Options"), you can enable/disable entire groups of build configurations.
+
+Clicking on a build configuration in this view will display its info in the "Build Info" section below and allow you to perform a build of just that specific configuration, as well as allowing you to simulate the use of that configuration in the editor.
 
 #### Build Info
+This displays all relevant information about a build configuration selected from the "Configurations" section above.
+
+**Build** - Builds the selected build configuration.
+**Build and Run** - Builds the selected build configuration and then automatically launches it.
+**Build and Run w/ Profiler** - Builds the selected build and the automatically launches it and connects the profiler. This is only available if "Development Build" is enabled in this build configuration.
+**Refresh BuildConstants and Apply Defines** - Generates the BuildConstants class and applies all of the defines listed above. This is useful for simulating the characteristics of this build when running inside the Unity Editor.
