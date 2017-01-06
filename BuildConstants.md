@@ -3,7 +3,7 @@ BuildConstants is a lightweight auto-generated class that can be used to access 
 ## Enums
 The enums generated represent the full range of enabled build configurations, so that you can use them to easily test which configuration is active.
 
-The default value for each of these is `None`, which is why this is also a reserved word that is not allowed to be used as a Release Type or Distribution name.
+The default value for each of these is `None`, which is why it's also a reserved word that is not allowed to be used as a Release Type or Distribution name.
 
 * `public enum ReleaseType`
 * `public enum Platform`
@@ -18,3 +18,4 @@ These fields represent a full description of the current build. To simulate a sp
 * `public const Platform platform`
 * `public const Architecture architecture`
 * `public const Distribution distribution`
+* `public static readonly System.DateTime buildDate`
