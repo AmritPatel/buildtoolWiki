@@ -1,11 +1,11 @@
 ## Basic Settings
 
 #### Build Path Options
-**Base Build Folder** - The base path where all builds are created. Can be a relative or absolute path. Relative paths are relative to the Unity project's base folder.
+**Base Build Folder** - The base path where all builds are created. Click the "..." button to set this value.
 
-**Build Path** - The path for each new build. If the path isn't unique, the previous build will be deleted. Recognized tokens for the build path:
+**Build Path** - The path for each new build. If the path isn't unique, the previous build will be deleted and overwritten. Recognized tokens for the build path:
 * `$YEAR` - The current year in "yyyy" format. 
-* `$MONTH` - The current month in "mm" format.
+* `$MONTH` - The current month in "MM" format.
 * `$DAY` - The current day in "dd" format.
 * `$TIME` - Current time in "hhmmss" format.
 * `$RELEASE_TYPE` - The release type name.
@@ -27,7 +27,7 @@
 * `$ADJECTIVE` - A randomly selected adjective.
 * `$NOUN` - A randomly selected noun.
 * `$YEAR` - The current year in "yyyy" format. 
-* `$MONTH` - The current month in "mm" format.
+* `$MONTH` - The current month in "MM" format.
 * `$DAY` - The current day in "dd" format.
 * `$TIME` - Current time in "hhmmss" format.
 * `$DAYSSINCE` - The number of days since a specified date. For example, `$DAYSSINCE("January 1, 2015")`.
@@ -36,7 +36,7 @@
 
 **Auto-Generate Version** - If enabled, the version string will be generated every time a build is performed. Otherwise, the version string will only be updated when the "Generate Version String Now" button is clicked.
 
-**Build Counter** - A counter that increments ever time a build is performed. Can be manually set to a value or automatically reset by clicking the "Reset Build Counter" button.
+**Build Counter** - A counter that increments every time a build is performed. Can be manually set to a value or automatically reset by clicking the "Reset Build Counter" button.
 
 
 
@@ -75,7 +75,7 @@ The arrow keys will adjust the position of a scene in the list, with the double-
 
 ## Build Platforms
 
-Build platforms are used to specify targeted hardware configurations. Distributions can optionally be specified to also allow an additional layer of granularity in your builds such as distinguishing between different release storefronts (Steam, itch.io, direct download, etc.).
+Build platforms are used to specify targeted hardware configurations. Distributions can optionally be specified to provide an additional layer of granularity in your builds such as distinguishing between different release storefronts (Steam, itch.io, direct download, etc.).
 
 **Add Platform** - Adds the selected platform to your set of targeted platforms.
 
@@ -117,4 +117,4 @@ This displays all relevant information about a build configuration selected from
 
 **Build and Run w/ Profiler** - Builds the selected build and the automatically launches it and connects the profiler. This is only available if "Development Build" is enabled in this build configuration.
 
-**Refresh BuildConstants and Apply Defines** - Generates the BuildConstants class and applies all of the defines listed above. This is useful for simulating the characteristics of this build when running inside the Unity Editor.
+**Refresh BuildConstants and Apply Defines** - Generates the [[BuildConstants]] class and applies all of the defines listed above. This is useful for simulating the characteristics of a specific build configuration when running inside the Unity Editor.
