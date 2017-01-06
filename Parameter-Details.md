@@ -1,7 +1,7 @@
 ## Basic Settings
 
 #### Build Path Options
-**Base Build Folder** - The base path where all builds are created. Click the "..." button to set this value.
+**Base Build Folder** - The base path where all builds are created. Click the "..." button to set this value. If working in a team, a path within the Unity project folder (but not in Assets) works best so that it will resolve to the same location for everyone.
 
 **Build Path** - The path for each new build. If the path isn't unique, the previous build will be deleted and overwritten. Recognized tokens for the build path:
 * `$YEAR` - The current year in "yyyy" format. 
