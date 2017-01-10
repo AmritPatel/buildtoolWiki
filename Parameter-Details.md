@@ -14,6 +14,7 @@
 * `$DISTRIBUTION` - The build distribution name.
 * `$VERSION` - The specified version for this build.
 * `$BUILD` - The build count number, shown in the product parameter settings.
+* `$PRODUCT_NAME` - The product name specified in the [[ReleaseType|Release-Types]].
 
 #### Post-Build Options
 **Open output folder after build** - Opens the base build folder after the build completes.
