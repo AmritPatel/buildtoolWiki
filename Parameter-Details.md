@@ -1,5 +1,7 @@
 ## Basic Settings
 
+![](https://raw.githubusercontent.com/Chaser324/unity-build/gh-pages/Unity_2017-01-11_00-01-24.png)
+
 #### Build Path Options
 **Base Build Folder** - The base path where all builds are created. Click the "..." button to set this value. If working in a team, a path within the Unity project folder (but not in Assets) works best so that it will resolve to the same location for everyone.
 
