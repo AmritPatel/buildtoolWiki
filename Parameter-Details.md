@@ -113,7 +113,9 @@ A Build Configuration is a full representation of a build constructed from Relea
 #### View Options
 **Hide disabled configurations** - Hides all disabled build configurations in the "Configurations" section below.
 
-**Show full configurations tree** - Enables tree view for the "Configurations" section below. Tree view is helpful for visualizing all build configuration options and easily enabling/disabling entire groups.
+**Show full configurations tree** - Enables tree view for the "Configurations" section below. As shown below, tree view is helpful for visualizing all build configuration options and easily enabling/disabling entire groups.
+
+![](https://raw.githubusercontent.com/Chaser324/unity-build/gh-pages/Unity_2017-01-11_00-07-38.png)
 
 #### Configurations
 A full display of all build configurations.
