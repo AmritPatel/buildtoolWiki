@@ -26,6 +26,8 @@
 
 ## Product Parameters
 
+![](https://raw.githubusercontent.com/Chaser324/unity-build/gh-pages/Unity_2017-01-11_00-01-24-2.png)
+
 **Version** - The version number/string for the build. Recognized tokens for the version:
 * `$ADJECTIVE` - A randomly selected adjective.
 * `$NOUN` - A randomly selected noun.
@@ -45,6 +47,8 @@
 
 
 ## Release Types
+
+![](https://raw.githubusercontent.com/Chaser324/unity-build/gh-pages/Unity_2017-01-11_00-01-42.png)
 
 Release types are intended to provide some top level separation between different versions of your game. For example, you might create "Release" and "Demo" release types or a release type for different languages you're distributing.
 
@@ -78,6 +82,8 @@ The arrow keys will adjust the position of a scene in the list, with the double-
 
 ## Build Platforms
 
+![](https://raw.githubusercontent.com/Chaser324/unity-build/gh-pages/Unity_2017-01-11_00-07-02.png)
+
 Build platforms are used to specify targeted hardware configurations. Distributions can optionally be specified to provide an additional layer of granularity in your builds such as distinguishing between different release storefronts (Steam, itch.io, direct download, etc.).
 
 **Add Platform** - Adds the selected platform to your set of targeted platforms.
@@ -93,10 +99,15 @@ Build platforms are used to specify targeted hardware configurations. Distributi
 
 ## Pre/Post-Build Actions
 
+![](https://raw.githubusercontent.com/Chaser324/unity-build/gh-pages/Unity_2017-01-11_00-10-00.png)
+
 
 
 
 ## Build Configurations
+
+![](https://raw.githubusercontent.com/Chaser324/unity-build/gh-pages/Unity_2017-01-11_00-07-23.png)
+
 A Build Configuration is a full representation of a build constructed from Release Type, Platform, Architecture, and Distribution.
 
 #### View Options
