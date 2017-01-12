@@ -4,6 +4,11 @@ BuildActions allow you to expand the functionality of SuperUnityBuild by adding 
 
 While each BuildAction will have its own set of options related to whatever purpose it serves, there are a few options that are common to most of them.
 
+* **Action Type** - This option is used to select whether a BuildAction should run once before/after all builds in a batch ("Single Run") or before/after each individual build in a batch ("Per Platform"). 
+* **Filter** - The filter is used to limit the build configurations where a BuildAction should execute. For example, if you have a BuildAction that zips up your builds, but you only want it to run if it's a release build for Humble Bundle. You might do something like this:
+
+![](https://raw.githubusercontent.com/Chaser324/unity-build/gh-pages/Unity_2017-01-11_21-18-05.png)
+
 ## Creating a BuildAction
 
 To create a new BuildAction:
