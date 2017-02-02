@@ -1,4 +1,4 @@
-BuildActions allow you to expand the functionality of SuperUnityBuild by adding new methods that can run before/after all builds or the individual builds of each separate configuration.
+BuildActions allow you to expand the functionality of SuperUnityBuild by adding new methods that can run before/after all builds or the individual builds of each separate configuration. If you need some examples, check out the [unity-build-actions](https://github.com/Chaser324/unity-build-actions) repository.
 
 ## Standard BuildAction Options
 
