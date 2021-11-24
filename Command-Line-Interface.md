@@ -7,11 +7,11 @@ Open a terminal or command prompt in your Unity project's directory. Then, start
 ```shell
 # OSX
 cd ~/Documents/MyUnityProject
-/Applications/Unity/Unity.app/Contents/MacOS/Unity -quit -batchmode -executeMethod SuperSystems.UnityBuild.BuildCLI.PerformBuild
+/Applications/Unity/Hub/Editor/YourUnityEditorVersion/Unity.app/Contents/MacOS/Unity -quit -batchmode -executeMethod SuperUnityBuild.BuildTool.BuildCLI.PerformBuild
 
 # Windows
 cd C:/Users/Me/Documents/MyUnityProject
-"C:\Program Files\Unity\Editor\Unity.exe" -quit -batchmode -executeMethod SuperSystems.UnityBuild.BuildCLI.PerformBuild
+"C:\Program Files\Unity\Editor\Unity.exe" -quit -batchmode -executeMethod SuperUnityBuild.BuildTool.BuildCLI.PerformBuild
 ```
 
 For general information about running Unity at the command line see [[https://docs.unity3d.com/Manual/CommandLineArguments.html]]
